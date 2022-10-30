@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>あなただけのプロフィールサイトを作ろう</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div id="question">
+      <h1 id="form">入力フォーム</h1>
+      <form onsubmit="return false;" action="index.js" name="question">
+        <label>名前</label>
+        <input type="text" placeholder="山田太郎" name="name" />
+        <label>身長</label
+        ><input type="number" placeholder="172" name="height" />
+        <label>血液型</label>
+        <input type="text" placeholder="A" name="bloodtype" />
+        <label>略歴</label>
+        <input type="text" placeholder="2002誕生" name="history" />
+        <label>受賞歴</label>
+        <input
+          type="text"
+          placeholder="令和元年度愛知県高等学校剣道大会第三位"
+          name="awords"
+        />
+        <label>出身地</label>
+        <input type="text" placeholder="東京都杉並区" name="from" />
+
+        <label>SNS</label>
+        <input
+          type="url"
+          name="sns"
+        /><!--SNSのアイコンを表示してそこにリンクを紐づけたい-->
+        <label>あなたの1番イケてる写真</label>
+        <input type="file" name="ikephoto" />
+        <textarea placeholder="格言、信念をどうぞ！" name="belief"></textarea>
+        <input type="submit" onclick="get()" value="完了する" />
+      </form>
+    </div>
+
+    <!--表示画面-->
+    <div id="answer">
+      <h1 id="site_name">
+        <div id="ikeda">Ikeda Shun</div>
+        <a href="https://twitter.com" id="twitter">twitter</a>
+      </h1>
+      <div id="contents">
+        <p>BASIC PROFILE</p>
+        <p>Height:<span id="height_a">172</span>cm</p>
+        <p>BloodType:<span id="bloodtype_a">B</span>型</p>
+        <p>HomeTown:<span id="from_a"></span></p>
+        <p>History:<span id="history_a">2022 横浜国立大学進学</span></p>
+        <p>
+          Awords:<span id="awords_a">1993年日本アカデミー賞助演男優賞</span>
+        </p>
+        <p>Belief:<span id="belief_a">一日一善</span></p>
+      </div>
+    </div>
+  </body>
+</html>

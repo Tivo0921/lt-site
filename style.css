@@ -1,0 +1,22 @@
+h1 {
+  color: rgb(24, 112, 115);
+  font-family: monospace;
+  font-size: 30px;
+  background-color: aliceblue;
+}
+h2 {
+  color: rgb(24, 191, 191);
+  font-family: monospace;
+  font-size: 25px;
+  background-color: rgb(198, 240, 226);
+}
+body {
+  background-image: url(images/wallpaper.png);
+  display:flex;
+  flex-direction: column;
+}
+img {
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
